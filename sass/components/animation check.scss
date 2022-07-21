@@ -1,0 +1,42 @@
+.animationVert{
+	cursor: pointer;
+	background-color: #99E2D0;
+	color: white;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: width 0.4s;
+	animation:  ease-in-out 0.6s;
+	animation: reverse both	;
+}
+    .animationVert:hover{
+    transition: transform 0.4s;
+    animation:  ease-in-out 0.6s;
+    animation: reverse both	;
+}
+
+.fa-circle-check{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	font-size: 40px;
+}
+.fa-circle-check:hover{
+
+	transform: rotate(360deg);
+	transition: 0.4s ease-in-out;
+	}
+
+.slide-left {
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }

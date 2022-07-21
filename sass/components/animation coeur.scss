@@ -1,0 +1,38 @@
+/* Animation Coeur */
+
+.fa-heart{
+    font-size: 30px;
+   
+    
+    &:hover{
+       color: $couleurViolet;
+
+    &::after  {
+        transform: translate(-100%, 0%) scale(1.1);
+        transition: all 0.4s cubic-bezier(.14,1.45,.49,1.84);
+    }
+}
+
+&::before {
+    display: inline-block;
+    transform: translate(0%, 0%);
+
+}
+
+&::after {
+        content: "\f004";
+        font-weight: 900;
+        display: inline-block;
+        color: transparent;
+        background-image: linear-gradient($couleurRose, $couleurViolet);
+        background-clip: text;
+        -webkit-background-clip: text;
+        transform: translate(-100%, 50%) scale(0);
+        transition: all 0.4s cubic-bezier(0.85, 0.23, 1, 0.52);
+
+   }
+}  
+               
+.paddingHeart{
+padding-right: 20px;
+font-size: 25px; }

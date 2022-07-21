@@ -1,0 +1,32 @@
+.bouton{
+    display: flex;
+    text-align: center;
+    border: solid 0.2px none;
+    border-radius: 31px;
+    height: 58px;
+    width: 200px;
+    text-decoration: none;
+    color: $couleurBlanc;
+    background: linear-gradient($couleurRose,$couleurViolet);
+    box-shadow: 3px 3px 20px 0px $couleurGris;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(1.08) ;
+        box-shadow: 3px 3px 15px 0px $couleurNoir;
+    }
+
+
+    &__alignement{
+	 @include flexcentre;
+}
+
+    &__size{
+	font-size: 20px;
+}
+}
+
+

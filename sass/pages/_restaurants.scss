@@ -111,7 +111,69 @@
     background-color: $couleurGris2;
 }
 
-/* Animation rond check */
+/* Mediaquerries */
+
+/* Responsive phones */
+
+@media screen and (max-width: 768px){
+
+    body{
+        box-sizing: border-box;
+        margin: 0px;
+    }
+	
+    header{
+        width: 120%;
+    }
+
+	.fondGris{
+		width: 120%;
+}
+    .photorestaurant{
+        width: 120%;
+    }
+
+    .menurestaurant{
+        margin-left: 15px;
+    }
+
+    .margeSection{
+        margin-bottom: 25px;
+    }    
+    .Entete{
+        width: 100%;
+    }
+    .footer{
+        width: 120%;
+    }
+    .boutonmenu{
+        width: 120%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+	
+    .traitVert{
+        margin-left: 5%;
+    }
+
+	.menurestaurant{
+		margin-left: 40% ;
+	}
+
+    .margeSection{
+        margin-bottom: 25px;
+    } 
+
+	.fondGris{
+		width: 100%;
+	}
+}
+
+
+
+
+
 
 
 

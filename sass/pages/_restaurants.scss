@@ -1,0 +1,182 @@
+/* Général */
+
+*{
+	font-family: Roboto;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Photo restaurant */
+
+.photorestaurant{
+	width: 100%;
+	object-fit: cover;
+	max-height: 28rem;
+}
+
+/* Partie menu */
+
+.fondGris{
+	background-color: #F2F2F2;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -32px;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	position: relative;
+}
+
+.aligntitre{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: center;
+}
+
+.fontTitre{
+	font-family: 'Shrikhand', cursive;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.Entete{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.fa-heart{
+	font-size: 30px;
+	margin-top: -20px;
+	position: relative;
+}
+
+.fontTitreColonne{
+	font-size: 30px;
+	font-weight: 300;
+	width: 3rem;
+    border-bottom: 6px solid #99e2d0;
+}
+
+.wrapcolumn{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menurestaurant{
+	width: 400px;
+	height: 80px;
+	border-radius: 25px;
+	box-shadow: 3px 3px 2px 0px #cfd0d1;
+	background-color: white;
+	margin-top: 30px;
+	position: relative;
+}
+
+.fontTitrePlats{
+	font-size: 17px;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-top: 15px;
+}
+
+.fontPplats{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 100;
+	padding-left: 10px;
+	padding-top: 3px;
+	transition: padding-right 0.3s;
+
+}
+
+.prixespace{
+	font-weight: 400;
+	top: 5px;
+	right: 10px;
+	position: absolute;
+	padding-right: 5px;
+	padding-top: 30px;
+}
+
+.boutonmenu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: $couleurGris2;
+}
+
+/* Mediaquerries */
+
+/* Responsive phones */
+
+@media screen and (max-width: 768px){
+
+    body{
+        box-sizing: border-box;
+        margin: 0px;
+    }
+
+
+    header{
+        width: 120%;
+    }
+
+	.fondGris{
+		width: 120%;
+
+}
+    .photorestaurant{
+        width: 120%;
+    }
+
+    .menurestaurant{
+        margin-left: 15px;
+    }
+
+    .margeSection{
+        margin-bottom: 25px;
+    }    
+    .Entete{
+        width: 100%;
+    }
+    .footer{
+        width: 120%;
+    }
+    .boutonmenu{
+        width: 120%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+
+    
+    .traitVert{
+        margin-left: 5%;
+    }
+
+	.menurestaurant{
+		margin-left: 40% ;
+	}
+
+    .margeSection{
+        margin-bottom: 25px;
+    } 
+
+	.fondGris{
+		width: 100%;
+	}
+
+
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+@mixin flexcentre {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex ($justify: center, $align: center, $direction: column, $wrap: nowrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin fondGris {
+    background-color: $couleurGris2;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: -32px;
+	border-top-left-radius: 2rem;
+	border-top-right-radius: 2rem;
+	position: relative;
+}
+

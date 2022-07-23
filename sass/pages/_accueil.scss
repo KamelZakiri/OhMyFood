@@ -203,11 +203,43 @@
 
 /* Responsive phones */
 
+
 @media screen and (max-width: 768px){
 
-	.bordureGris{
+	.phraseParis{
+        width: 120%;
+    }
+    
+    .filtres{
+        width: 120%;
+    }
+
+    .responsive{
+        width: 120%;
+    }
+
+    .imageRestaurant{
+        width: 350px;
+        height: 190px;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .nouveau{
+        margin-left: 260px;
+    }
+
+    .fondGris1{
+        width: 120%;
+    }
+       
+    .bordureGris{
 		border-radius: 0%;
-		width: 100%;	}
+		width: 120%;
+        margin-bottom: 0px;	
+    }
 
 }
 
@@ -227,7 +259,3 @@
 		justify-content: center;
 	}
 }
-
-
-
-

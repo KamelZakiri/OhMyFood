@@ -2,7 +2,6 @@
     display: flex;
 	justify-content: center;
 	align-items: center;
-    text-align: center;
 }
 
 @mixin flexBetween {
@@ -14,14 +13,6 @@
 @mixin flexWrap {
     display: flex;
     flex-wrap: wrap;
-}
-
-@mixin flex ($justify: center, $align: center, $direction: column, $wrap: nowrap) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
 }
 
 @mixin fondGris {
@@ -36,3 +27,8 @@
 	position: relative;
 }
 
+@mixin hide {
+    overflow: hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}

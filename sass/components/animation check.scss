@@ -1,36 +1,42 @@
-.animationVert{
+.menurestaurant{
+    position: relative;
+&__animationcheck{
 	cursor: pointer;
-	background-color: #99E2D0;
-	color: white;
+	background-color: $couleurVert;
+	color: $couleurBlanc;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
-	position: absolute;
-	top: 0;
-	right: 0;
+    display: inline-block;
+	top: 0px;
+	right: 0px;
 	height: 100%;
-	width: 0;
-	opacity: 0;
-	height: 80px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
 
-
-    &:hover{
-    width: 50Opx;	
-    transition: width 0.4s;
-	animation:  ease-in-out 0.6s;
-	animation: reverse both	
- }
-}
-.fa-circle-check{
+    .fa-circle-check{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	font-size: 40px;
+    transition: width 0.4s;
+    opacity: 0;
 
-    &:hover{
-	transform: translate(-50%, -50%) rotate(1turn);
-	}
+ }
 }
 
+
+    &:hover .menurestaurant__animationcheck{
+    width: 100px;
+    animation:  ease-in-out 0.6s;
+    }
+
+    &:hover .fa-circle-check{
+    opacity: 1;
+	transform: translate(-5%, -5%) rotate(1turn);
+    transition: all 0.3s ease-out;
+    animation-delay: 0.1s;
+	}
+}

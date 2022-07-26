@@ -15,8 +15,12 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
 
-    &__position {
+   &__position {
         position: fixed;
+        animation-name: disparait;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
         top: 0;
         left: 0;
         width: 100%;
@@ -25,16 +29,23 @@
         background-color: $couleurBlanc;
       }
 }
+@keyframes disparait {
+    0%{
+        z-index: 1000;
+    }
+    100%{
+        z-index: -1;
 
+    }
+}
 @keyframes spin{
-    99%{
+    0%{
         transform: rotate(360deg);
-        transition-duration: 3s;
+        transition-duration: 5s;
 
     }
     100%{
         opacity: 0;
-        display: none;
         z-index: -1;
     }
 }

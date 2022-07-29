@@ -343,7 +343,8 @@
   border: 2px #EEE;
   border-radius: 31px;
   position: relative;
-  height: 67px;
+  height: 70px;
+  width: 300px;
   text-decoration: none;
   color: black;
   background-color: #F2F2F2;
@@ -473,7 +474,21 @@
     width: 350px;
     height: 190px;
   }
-  .card {
+  
+  .petiteMarge{
+        width: 50%;
+      }
+      
+    .paddingText{
+        padding-right: 50px;
+      }
+      
+    .restaurant,
+    .menu,
+    .degustez{
+        width: 85%;
+        height: 80px;
+      }  .card {
     width: 350px;
   }
   .nouveau {

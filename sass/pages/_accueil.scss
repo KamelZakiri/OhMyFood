@@ -207,7 +207,6 @@
 	font-weight: 100;
 }
 
-
 /* Responsive phones */
 
 @media screen and (max-width: 768px){
@@ -228,6 +227,21 @@
         width: 350px;
         height: 190px;
     }
+
+    .petiteMarge{
+        width: 50%;
+      }
+      
+    .paddingText{
+        padding-right: 50px;
+      }
+      
+    .restaurant,
+    .menu,
+    .degustez{
+        width: 85%;
+        height: 80px;
+      }
 
     .card{
         width: 350px;
@@ -265,3 +279,6 @@
 		justify-content: center;
 	}
 }
+
+
+
